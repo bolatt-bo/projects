@@ -1,0 +1,151 @@
+<!-- <div class="container">
+  <div class="display">0000</div>
+  <div class="keypad">
+      <table class="keypad-table">
+          <tr>
+          <td>
+            <div class="key">AC</div>
+          </td>
+          <td>
+            <div class="key">C</div>
+          </td>
+          <td>
+            <div class="key">%</div>
+          </td>
+          <td>
+            <div class="key">&#247;</div>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <div class="key">7</div>
+          </td>
+          <td>
+            <div class="key">8</div>
+          </td>
+          <td>
+            <div class="key" onclick='showDisplay(9)'>9</div>
+          </td>
+          <td>
+            <div class="key">x</div>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <div class="key">4</div>
+          </td>
+          <td>
+            <div class="key">5</div>
+          </td>
+          <td>
+            <div class="key">6</div>
+          </td>
+          <td>
+            <div class="key">-</div>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <div class="key">1</div>
+          </td>
+          <td>
+            <div class="key">2</div>
+          </td>
+          <td>
+            <div class="key">3</div>
+          </td>
+          <td>
+            <div class="key">+</div>
+          </td>
+        </tr>
+          <tr>
+          <td colspan='2'>
+            <div class="key" style='width:110px'>0</div>
+          </td>
+       
+          <td>
+            <div class="key">.</div>
+          </td>
+          <td>
+            <div class="key">=</div>
+          </td>
+        </tr>
+      </table>
+    </div> 
+</div> -->
+
+<div class="container">
+  <div class="display">0</div>
+  <div class="keypad">
+      <table class="keypad-table">
+          <tr>
+          <td>
+            <div class="key" onclick='reset()'>AC</div>
+          </td>
+          <td>
+            <div class="key" onclick='clearLast()'>C</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay("%")'>%</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay("/")'>&#247;</div>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <div class="key" onclick='showdisplay(7)'>7</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay(8)'>8</div>
+          </td>
+          <td>
+            <div class="key"  onclick='showdisplay(9)'>9</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay("*")'>x</div>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <div class="key" onclick='showdisplay(4)'>4</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay(5)'>5</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay(6)'>6</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay("-")'>-</div>
+          </td>
+        </tr>
+          <tr>
+          <td>
+            <div class="key" onclick='showdisplay(1)'>1</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay(2)'>2</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay(3)'>3</div>
+          </td>
+          <td>
+            <div class="key" onclick='showdisplay("+")'>+</div>
+          </td>
+        </tr>
+          <tr>
+          <td colspan='2'>
+            <div class="key" style='width:110px' onclick='showdisplay(0)'>0</div>
+          </td>
+       
+          <td>
+            <div class="key" onclick='showdisplay(".")'>.</div>
+          </td>
+          <td>
+            <div class="key" onclick='calculate()'>=</div>
+          </td>
+        </tr>
+      </table>
+    </div> 
+</div>
