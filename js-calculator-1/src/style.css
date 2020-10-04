@@ -1,0 +1,55 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  font-size:20px;
+  font-family:arial;
+}
+body{
+  background:black;
+}
+
+.container{
+  width:240px;
+  margin:100px auto;
+}
+
+
+.key{
+  width:50px;
+  height:50px;
+  border:1px solid black;
+  text-align:center;
+  line-height:50px;
+  border-radius:50px;
+  margin:5px;
+  background:#333;
+  color:white;
+  cursor:pointer;
+  user-select:none;
+  
+}
+.key:active{
+  background:#33333390;
+}
+
+.display{
+  color:white;
+  text-align:right;
+  font-size:40px;
+  padding:10px;
+}
+
+.keypad-table tr:first-child .key{
+  background-color:#a5a5a5;
+}
+.keypad-table tr:first-child .key:active{
+background-color:#a5a5a590;
+}
+
+.keypad-table tr td:last-child .key{
+  background:#ffa45c;
+}
+.keypad-table tr td:last-child .key:active{
+  background:#ffa45ccc;
+}
