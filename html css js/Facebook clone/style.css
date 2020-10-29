@@ -1,0 +1,260 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary:#2e88ff;
+    --dark:#18191a;
+    --semi-dark:#242526;
+    --grey:#3a3b3c;
+    --light-grey:#4e4f50;
+    --danger:#f02849;
+    --success:#45bd62;
+    --warning:#f7b927;
+    --text:#b7b9bd;
+    --text-white:#ffffff;
+
+}
+
+body{
+    background-color:var(--dark);   
+}
+
+.nav{
+    background-color:var(--semi-dark);
+    display:flex;
+    color:var(--text)
+}
+.left{
+    width:25%;
+}
+.left-wrapper{
+    display:flex;
+    padding:7px;
+}
+.search-box{
+    display:flex;
+    align-items:center;
+    border-radius: 100px;
+    background-color:var(--grey);
+    padding:8px 20px;
+}
+.search-box:hover{
+    background-color: var(--light-grey);
+}
+
+.logo{
+    width:60px;
+    display:inline-block;
+}
+
+.search-input{
+    margin-left:10px;
+    background:none;
+    color:var(--text);
+    border:none;
+    outline:none;
+}
+
+/* center */ 
+.center{
+    width:50%;
+}
+.center-wrapper{
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+}
+.center-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    /* padding:16px 58px; */
+    margin-left: 5px;
+    position: relative;
+    transition: 0.5s;
+}
+.center-links.active{
+    border-bottom: 3px solid var(--primary);
+}
+.center-links.active .center-icon{
+    color:var(--primary)
+}
+.center-links:hover{
+    background-color: var(--grey);
+    border-radius: 10px;
+    border-bottom: 3px solid var(--grey);
+}
+.center-icon{
+  font-size:22px;
+}
+.center .noti{
+    background: var(--danger);
+    padding: 2px 4px;
+    border-radius: 10px;
+    font-size: 12px;
+    position: absolute;
+    top: 11px;
+    right:27px;
+    font-weight: bold;
+    color:var(--text)
+}
+
+
+
+
+/*  right */
+.right{
+    width:25%;
+}
+.right-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.profile{
+    display:flex;   
+    align-items: center;
+    margin-right: 15px;
+    padding:5px;
+    padding-right: 8px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.profile:hover{
+    background-color: var(--light-grey);
+    padding: 5px;
+    padding-right: 8px;
+    border-radius: 20px;
+}
+.profile-pic{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 4px;
+}
+.profile-name{
+    font-weight: bolder;
+}
+.noti-box{
+     display:flex; 
+
+}
+.noti-box .noti{
+   font-size:18px;
+   background-color:var(--grey);
+   border-radius: 50%;
+   padding:10px;
+   margin:5px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.noti-box .noti:hover{
+   background-color: var(--light-grey);
+   font-weight: 900;
+ }
+
+
+ /* fb body */ 
+ .fb-body{
+     display: flex;
+ }
+ /* left */
+.fb-body-left{
+    width: 25%;
+}
+
+/* center */
+.fb-body-center{
+    width: 50%;
+}
+.my-day-list{
+    display:flex;
+    margin-top: 20px;
+    position: relative;
+}
+.my-day{
+    height:200px;
+    width:130px;
+    border-radius: 20px;
+    overflow:hidden;
+    margin-top: 20px;
+    position: relative;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    padding-left:5px;
+    margin-left:5px;
+}
+.my-day-owner{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:15px;
+    left:15px;
+}
+.my-day-owner.first{
+    background-color: var(--primary);
+    color: var(--text-white);
+    font-weight: bolder;
+}
+.my-day-owner-img{
+    width:34px;
+    height:34px;
+    background-size: 100%;
+    background-size: cover;
+    border-radius: 50%;
+}
+.my-day-text{
+    position: absolute;
+    bottom: 5px;
+    color: var(--text-white)
+}
+.my-day-image{
+    width:100%;
+}
+.scroll-my-day{
+    width:55px;
+    height: 55px;
+    position: absolute;
+    top:44%;
+    right:-27px;
+    background-color: var(--grey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-my-day .feather-chevron-right{
+    color:var(--text-white);
+    font-size: 30px;
+}
+.add-post{
+
+}
+.post-list{
+
+}
+
+/* right */
+.fb-body-right{
+    width:25%;
+}
+
+
+
+
